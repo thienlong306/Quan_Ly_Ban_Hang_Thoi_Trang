@@ -78,6 +78,14 @@ public class Registration extends JFrame {
 		panel.setBackground(Color.ORANGE);
 		panel.setBounds(0, 0, 417, 77);
 		contentPane.add(panel);
+		panel.setLayout(null);
+		
+		JLabel lblLoginForm = new JLabel("Login Form");
+		lblLoginForm.setHorizontalAlignment(SwingConstants.CENTER);
+		lblLoginForm.setForeground(Color.WHITE);
+		lblLoginForm.setFont(new Font("Tahoma", Font.BOLD, 20));
+		lblLoginForm.setBounds(10, 10, 122, 65);
+		panel.add(lblLoginForm);
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(Color.BLACK);
