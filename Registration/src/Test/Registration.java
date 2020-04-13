@@ -48,7 +48,6 @@ public class Registration extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(null);
 		setContentPane(contentPane);
-		
 		user1 = new JTextField();
 		user1.setBounds(10, 51, 183, 30);
 		contentPane.add(user1);
