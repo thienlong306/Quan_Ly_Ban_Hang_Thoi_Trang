@@ -39,7 +39,7 @@ public class Form extends JFrame {
 	}
 
 	/**
-	 * Create the frame
+	 * Create the frame.
 	 */
 	public Form() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
