@@ -28,7 +28,7 @@ public class Form_Login extends JFrame {
 
 	/**
 	 * Launch the application
-	 */
+	 */  
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -114,7 +114,7 @@ public class Form_Login extends JFrame {
 					e1.printStackTrace();
 				}
 			}
-		});
+		}); 
 		btnNewButton.setBounds(200, 212, 85, 21);
 		panel_1.add(btnNewButton);
 	}
