@@ -1,4 +1,4 @@
-package Test;
+package GUI;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -7,6 +7,10 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.text.JTextComponent;
+
+import BLL.UserBLL;
+import DTO.UserDTO;
+
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -16,11 +20,11 @@ import java.awt.event.ActionEvent;
 import java.sql.*;
 import java.awt.Color;
 import java.awt.Font;
-public class Form extends JFrame {
+public class Form_Login extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField user1;
-	private JTextField pass1;
+	private JTextField txtUserName;
+	private JTextField txtPassword;
 
 	/**
 	 * Launch the application
@@ -29,7 +33,7 @@ public class Form extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Form frame = new Form();
+					Form_Login frame = new Form_Login();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -41,24 +45,24 @@ public class Form extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Form() {
+	public Form_Login() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 422, 355);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(null);
 		setContentPane(contentPane);
-		user1 = new JTextField();
-		user1.setBackground(Color.GRAY);
-		user1.setBounds(142, 124, 231, 34);
-		contentPane.add(user1);
-		user1.setColumns(10);
+		txtUserName = new JTextField();
+		txtUserName.setBackground(Color.GRAY);
+		txtUserName.setBounds(142, 124, 231, 34);
+		contentPane.add(txtUserName);
+		txtUserName.setColumns(10);
 		
-		pass1 = new JTextField();
-		pass1.setBackground(Color.GRAY);
-		pass1.setColumns(10);
-		pass1.setBounds(142, 226, 231, 34);
-		contentPane.add(pass1);
+		txtPassword = new JTextField();
+		txtPassword.setBackground(Color.GRAY);
+		txtPassword.setColumns(10);
+		txtPassword.setBounds(142, 226, 231, 34);
+		contentPane.add(txtPassword);
 		
 		JLabel pass = new JLabel("Password:");
 		pass.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -96,22 +100,18 @@ public class Form extends JFrame {
 		JButton btnNewButton = new JButton("Login");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				UserDTO userDTO = new UserDTO (txtUserName.getText(), txtPassword.getText());
+				UserBLL userBLL = new UserBLL();
+				
 				try {
-					Class.forName("com.mysql.jdbc.Driver");
-					Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","");
-					PreparedStatement ps = conn.prepareStatement("insert into user(user_name,user_password) values(?,?)");
-					
-					ps.setString(1,user1.getText());
-					ps.setString(2,pass1.getText());	
-					int x = ps.executeUpdate();
-					if(x>0) {
-						System.out.println("Registration done sucessfully...");
-					} else
-					{
-						System.out.println("Registration Failed...");	
+					if (userBLL.Login(userDTO)==null) {
+						System.out.println("Login ko thanh cong");
 					}
-				}catch(Exception e1) {
-					System.out.println(e1);
+					else {
+						System.out.println("Login thanh cong");
+					}
+				} catch (ClassNotFoundException e1) {
+					e1.printStackTrace();
 				}
 			}
 		});
