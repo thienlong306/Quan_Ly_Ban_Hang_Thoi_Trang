@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_Landscape" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="abc50845-1105-476a-aee4-11d2642ba954">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="479"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="521"/>
+	<queryString>
+		<![CDATA[SELECT *
+FROM hoadon 
+ORDER BY hoadon.`MaKhachHang` ASC]]>
+	</queryString>
+	<field name="MaHoaDon" class="java.lang.String"/>
+	<field name="MaKhachHang" class="java.lang.String"/>
+	<field name="MaNhanVien" class="java.lang.String"/>
+	<field name="MaSanPham" class="java.lang.String"/>
+	<field name="NgayLapHoaDon" class="java.lang.String"/>
+	<field name="TongTien" class="java.lang.String"/>
+	<variable name="TongTien1" class="java.lang.Integer" resetType="Group" resetGroup="TongTien" calculation="Count">
+		<variableExpression><![CDATA[$F{TongTien}]]></variableExpression>
+	</variable>
+	<group name="KhachHang">
+		<groupExpression><![CDATA[$F{MaKhachHang}]]></groupExpression>
+		<groupHeader>
+			<band height="41">
+				<rectangle>
+					<reportElement x="-21" y="-2" width="840" height="41" backcolor="#A6A6A6" uuid="767f52c5-8c07-4497-a82f-7de0a9522d6d"/>
+				</rectangle>
+				<textField>
+					<reportElement x="-11" y="3" width="140" height="30" uuid="907f17a5-4899-48f7-a4bb-d3404bab471d"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{MaKhachHang}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="TongTien">
+		<groupExpression><![CDATA[$F{TongTien}]]></groupExpression>
+	</group>
+	<title>
+		<band height="57" splitType="Stretch">
+			<rectangle>
+				<reportElement x="226" y="-9" width="351" height="61" backcolor="#FF0400" uuid="5f4aef93-aa77-40ba-8ae0-5227e39fc932"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="229" y="-10" width="344" height="62" uuid="ac75726a-8605-458e-a684-d53ebc04bfe0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Báo Cáo ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="0" width="100" height="30" uuid="934160e9-5137-48c1-9e0d-47b9149917e4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nhóm 09]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="27" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-19" y="-5" width="841" height="31" backcolor="#03FF42" uuid="723d607b-5959-4d54-9d37-e3a195e8198d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="140" y="-6" width="109" height="30" uuid="465e6bbf-1514-4ae2-a7a3-fb16ffb89b5f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[MaHoaDon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="281" y="-6" width="119" height="30" uuid="709c80ad-667c-4149-b3b9-a443c8a876e8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[MaNhanVien]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="-4" width="116" height="30" uuid="ec8fbf62-7c0a-41bf-899a-d6bdf9619a11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[MaSanPham]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="571" y="-5" width="117" height="30" uuid="1dbde921-37fe-4353-b96e-4e2babcdbffc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[NgayLapHoaDon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="712" y="-6" width="110" height="30" uuid="f24719fd-b61b-4a9c-8f5a-dbea7f69ef74"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[TongTien]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="-6" width="109" height="30" uuid="eb0d3d00-bf68-44a6-8423-2f4a0d1a048c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[MaKhachHang]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="43" splitType="Stretch">
+			<rectangle>
+				<reportElement x="120" y="0" width="701" height="41" backcolor="#FAED00" uuid="336cde50-c0d8-408f-9369-a2e5a2abe028"/>
+			</rectangle>
+			<textField>
+				<reportElement x="130" y="5" width="142" height="30" uuid="49d617b6-06ed-4237-92f8-7fce2b44c704"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{MaHoaDon}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="261" y="5" width="140" height="30" uuid="bead7aa4-d833-40c5-8b30-a9f04d97fcfb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{MaNhanVien}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="401" y="5" width="140" height="30" uuid="3d946c5a-a6ef-42b5-8f67-c49589f910c7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{MaSanPham}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="541" y="5" width="140" height="30" uuid="d3841868-4a4c-4d47-980c-bfd7eaf0f2ab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{NgayLapHoaDon}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="681" y="5" width="140" height="30" uuid="bd972b48-07ec-43c3-b692-23d9838ad1e5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{TongTien}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
