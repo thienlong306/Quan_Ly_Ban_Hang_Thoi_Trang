@@ -75,5 +75,46 @@
 	<classpathentry kind="lib" path="D:/Lib/poi-ooxml-schemas-4.1.2.jar"/>
 	<classpathentry kind="lib" path="D:/Lib/poi-scratchpad-3.16.jar"/>
 	<classpathentry kind="lib" path="D:/Lib/poi-scratchpad-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/commons-beanutils-1.9.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/commons-beanutils-1.9.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/commons-beanutils-1.9.4-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/commons-beanutils-1.9.4-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/commons-beanutils-1.9.4-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/commons-collections4-4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/commons-digester-2.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/commons-digester-2.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/commons-digester3-3.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/commons-digester3-3.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/commons-digester3-3.2-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/commons-digester3-3.2-with-deps.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/itext-2.1.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/itextpdf-5.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/itext-pdfa-5.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/jasperreports.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/jasperreports-6.12.2 (1).jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/jasperreports-6.12.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/jasperreports-annotation-processors-6.12.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/jasperreports-chart-customizers-6.12.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/jasperreports-chart-themes-6.12.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/jasperreports-custom-visualization-6.12.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/jasperreports-fonts-6.12.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/jasperreports-functions-6.12.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/jasperreports-javaflow-6.12.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/jasperreports-metadata-6.12.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/mysql-connector.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/poi-3.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/poi-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/poi-examples-3.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/poi-examples-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/poi-excelant-3.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/poi-excelant-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/poi-ooxml-3.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/poi-ooxml-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/poi-ooxml-schemas-3.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/poi-ooxml-schemas-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/poi-scratchpad-3.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC/Desktop/Lib/poi-scratchpad-4.1.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
